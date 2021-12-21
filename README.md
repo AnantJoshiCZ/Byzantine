@@ -52,11 +52,13 @@ TODOs
 1. Remove print statements from code
 2. Fix consensus code: currently only uses partial roll-up 
 
-
-# Contributing
-
+Contributing
+------------
 If you want to help add to this code, please create pull request with appropriate changes and comments. Please note that this is supposed to be an example implementation of the Byzantine General Problem and the Oral Message Algorithm. A possible addition can be the the Signed Message Algorithm which can use the same the framework and solves this problem in a much more efficient manner.
 
+# Support
+
+If this repo helped you understand the problem and you enjoyed playing around with the inputs, please give it a star!
 # License 
 
 This repo is covered under the MIT License
