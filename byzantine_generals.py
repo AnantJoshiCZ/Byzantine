@@ -4,7 +4,6 @@ import itertools
 
 class General:
     
-    
     def __init__(self, g_id, loyalty, post=None):
         self.g_id = g_id
         self.loyalty = loyalty
@@ -15,7 +14,6 @@ class General:
     
     def send_message(self, generalToSend, c_mes, round):
         mStr = str(self.g_id) + "," + c_mes
-        
         if self.loyalty == "T":
             ord = mStr[-1]
             
@@ -40,12 +38,9 @@ class General:
 
 
 # Example Inputs
-
-
 NUM_OF_LEIUTENANTS = 6
 COMMANDER_LOYALTY = "L"
 loyalties = "LTLLTL"
-
 
 '''
 NUM_OF_LEIUTENANTS = 3
@@ -91,11 +86,8 @@ rounds = traitorCount
 
 #total rounds is equal to number of traitors + 1, use <= if using while with rounds var
 
-
-
 #Phase 1: Commander's Turn
 #print(generals[0].__dict__)
-
 
 #send initial set of messages including actual order
 for gens in generals[1:]:
@@ -151,13 +143,10 @@ for g in generals[1:]:
     g.allMessagesReceived += res
 
 
-
 #Phase 2: Consensus
 print('Phase 2: Consensus \n')
 
-
 # Message Grouping
-
 for g in generals[1:]:
     util_func = lambda x: x[0:5]
     temp = sorted(g.allMessagesReceived, key = util_func)
@@ -192,9 +181,8 @@ for g in generals[1:]:
 print("#########################")
 
 
-
-
 '''
+# Naive Consensus (takes consensus over all messages received)
 for g in generals[1:]:
     consensusCommands = [s[-1] for s in g.allMessagesReceived]
     #print("General {} (Loyalty {}) Consensus Str: {}".format(g.g_id, g.loyalty, consensusCommands))
