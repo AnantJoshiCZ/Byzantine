@@ -45,3 +45,18 @@ Cost
 ----
 This algorithm is very costly. For _n_ generals and _m_ traitors, the total number of messages is _O(n^m+1)_
 
+# Implementation
+
+TODOs
+-----
+1. Remove print statements from code
+2. Fix consensus code: currently only uses partial roll-up 
+
+
+# Contributing
+
+If you want to help add to this code, please create pull request with appropriate changes and comments. Please note that this is supposed to be an example implementation of the Byzantine General Problem and the Oral Message Algorithm.
+
+# License 
+
+This repo is covered under the MIT License
