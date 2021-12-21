@@ -55,7 +55,7 @@ TODOs
 
 # Contributing
 
-If you want to help add to this code, please create pull request with appropriate changes and comments. Please note that this is supposed to be an example implementation of the Byzantine General Problem and the Oral Message Algorithm.
+If you want to help add to this code, please create pull request with appropriate changes and comments. Please note that this is supposed to be an example implementation of the Byzantine General Problem and the Oral Message Algorithm. A possible addition can be the the Signed Message Algorithm which can use the same the framework and solves this problem in a much more efficient manner.
 
 # License 
 
